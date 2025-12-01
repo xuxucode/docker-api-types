@@ -1,0 +1,83 @@
+diff --git a/dist/Number.d.ts b/dist/Number.d.ts
+index 69fa7cc31ec58706e64584648a342b71a7eb95fc..be90521095ae430137bfbeb64d263e1baa58f258 100644
+--- a/dist/Number.d.ts
++++ b/dist/Number.d.ts
+@@ -18,8 +18,7 @@ declare const U8_base: Schema.brand<Schema.filter<typeof Schema.Int>, "U8">;
+  * @since 1.0.0
+  * @category Number schemas
+  */
+-export declare class U8 extends U8_base {
+-}
++export declare const U8  = Schema.Number;
+ /**
+  * An unsigned 16 bit integer
+  *
+@@ -34,8 +33,7 @@ declare const U16_base: Schema.brand<Schema.filter<typeof Schema.Int>, "U16">;
+  * @since 1.0.0
+  * @category Number schemas
+  */
+-export declare class U16 extends U16_base {
+-}
++export declare const U16 = Schema.Number;
+ /**
+  * An unsigned 32 bit integer
+  *
+@@ -50,8 +48,7 @@ declare const U32_base: Schema.brand<Schema.filter<typeof Schema.Int>, "U32">;
+  * @since 1.0.0
+  * @category Number schemas
+  */
+-export declare class U32 extends U32_base {
+-}
++export declare const U32 = Schema.Number;
+ /**
+  * An unsigned 64 bit integer
+  *
+@@ -66,8 +63,7 @@ declare const U64_base: Schema.brand<Schema.filter<Schema.Union<[typeof Schema.B
+  * @since 1.0.0
+  * @category Number schemas
+  */
+-export declare class U64 extends U64_base {
+-}
++export declare const U64 = Schema.Number;
+ /**
+  * A signed 8 bit integer
+  *
+@@ -82,8 +78,7 @@ declare const I8_base: Schema.brand<Schema.filter<typeof Schema.Int>, "I8">;
+  * @since 1.0.0
+  * @category Number schemas
+  */
+-export declare class I8 extends I8_base {
+-}
++export declare const I8  = Schema.Number;
+ /**
+  * A signed 16 bit integer
+  *
+@@ -98,8 +93,7 @@ declare const I16_base: Schema.brand<Schema.filter<typeof Schema.Int>, "I16">;
+  * @since 1.0.0
+  * @category Number schemas
+  */
+-export declare class I16 extends I16_base {
+-}
++export declare const I16 = Schema.Number;
+ /**
+  * A signed 32 bit integer
+  *
+@@ -114,8 +108,7 @@ declare const I32_base: Schema.brand<Schema.filter<typeof Schema.Int>, "I32">;
+  * @since 1.0.0
+  * @category Number schemas
+  */
+-export declare class I32 extends I32_base {
+-}
++export declare const I32 = Schema.Number;
+ /**
+  * A signed 64 bit integer
+  *
+@@ -130,7 +123,6 @@ declare const I64_base: Schema.brand<Schema.filter<Schema.Union<[typeof Schema.B
+  * @since 1.0.0
+  * @category Number schemas
+  */
+-export declare class I64 extends I64_base {
+-}
++export declare const I64 = Schema.Number;
+ export {};
+ //# sourceMappingURL=Number.d.ts.map
