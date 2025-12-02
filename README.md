@@ -20,6 +20,8 @@ export async function listContainers(params?: ContainerListOptions): Promise<Mob
     return await response.json() as MobySchemas.ContainerSummary[]
   }
 }
+
+// import type { Brand, Effect } from 'docker-api-types/effect'
 ```
 
 ## Credits
