@@ -85,8 +85,3 @@ export * as PodmanEngine from "./PodmanEngine.ts"
  * @since 1.0.0
  */
 export * as Promises from "./Promises.ts"
-
-/**
- * Effect types
- */
-export type { Effect } from 'effect'

@@ -1,6 +1,6 @@
 {
     "name": "docker-api-types",
-    "version": "1.51.5",
+    "version": "1.51.6",
     "description": "TypeScript types for Docker Engine API",
     "keywords": [
         "docker",
@@ -17,7 +17,14 @@
     "license": "GPL-3.0-only",
     "author": "Xu Xu",
     "type": "module",
-    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts"
+        },
+        "./effect": {
+            "types": "./dist/effect.d.ts"
+        }
+    },
     "files": [
         "dist/**/*.d.ts"
     ],
