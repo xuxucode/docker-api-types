@@ -1,7 +1,7 @@
 {
     "name": "docker-api-types",
-    "version": "1.51.1",
-    "description": "Docker/Moby API types",
+    "version": "1.51.5",
+    "description": "TypeScript types for Docker Engine API",
     "keywords": [
         "docker",
         "moby"
@@ -15,14 +15,15 @@
         "url": "git+https://github.com/xuxucode/docker-api-types.git"
     },
     "license": "GPL-3.0-only",
-    "author": "Edward Xu",
+    "author": "Xu Xu",
     "type": "module",
     "types": "./dist/index.d.ts",
     "files": [
         "dist/**/*.d.ts"
     ],
     "scripts": {
-        "build": "rm -rf dist && tsc -b tsconfig.build.json"
+        "build": "rm -rf dist && tsc -b tsconfig.build.json",
+        "prepublishOnly": "npm run build; true"
     },
     "dependencies": {
         "@effect/platform": "^0.93.5",
